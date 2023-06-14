@@ -1,6 +1,19 @@
+import java.util.Scanner;
+
 class Dice{
     public static void main(String[] args){
     
+        //
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("What is your name?");
+        System.out.print("> ");
+        
+        String name = sc.nextLine();
+        
+        System.out.println("Hello, "+name+"!");
+        //
+        
         double r1 = Math.random()*6+1;
         int a = (int)r1;
         
